@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>坦克大战 - Tank Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameWrapper">
+        <div id="sidebar">
+            <h1>🎮 坦克大战</h1>
+            <div id="status">
+                <div class="info-row">
+                    <span>🏆 关卡</span>
+                    <span id="levelDisplay">1</span>
+                </div>
+                <div class="info-row">
+                    <span>❤️ 生命</span>
+                    <span id="livesDisplay">3</span>
+                </div>
+                <div class="info-row">
+                    <span>💀 敌人</span>
+                    <span id="enemiesDisplay">20</span>
+                </div>
+                <div class="info-row">
+                    <span>⭐ 分数</span>
+                    <span id="scoreDisplay">0</span>
+                </div>
+            </div>
+            <div id="controls">
+                <h3>🎯 操作</h3>
+                <p>← ↑ ↓ → 移动</p>
+                <p>空格 / J 射击</p>
+                <p>P / Esc 暂停</p>
+            </div>
+            <button id="restartBtn">重新开始</button>
+            <div id="mobileControls">
+                <p style="font-size: 12px; color: #888; margin-top: 10px;">📱 手机触屏可用</p>
+            </div>
+        </div>
+        <div id="canvasContainer">
+            <canvas id="gameCanvas" width="780" height="780"></canvas>
+            <div id="gameOverlay">
+                <div id="overlayContent">
+                    <h2 id="overlayTitle">坦克大战</h2>
+                    <p id="overlayMsg">按 空格键 开始游戏</p>
+                    <button id="overlayBtn" style="display:none;">重新开始</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
