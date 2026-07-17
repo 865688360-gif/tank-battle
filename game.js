@@ -235,7 +235,7 @@ let enemies = [];
 let bullets = [];
 
 // ─── Spawn points ───────────────────────────────────────────
-const PLAYER_SPAWN = { x: 9 * TILE, y: 24 * TILE };
+const PLAYER_SPAWN = { x: 8 * TILE, y: 24 * TILE };
 const ENEMY_SPAWNS = [
     { x: 0, y: 0 },
     { x: 12 * TILE, y: 0 },
